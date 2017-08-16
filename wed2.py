@@ -16,22 +16,33 @@
 ##    8 8888             `8888888P'     8            `Yo     `8888888P'
 
 # Import our modules
-import simplegui
+import simpleguitk as simplegui
 import random
 
 # Functions
+def newGame():
+    pass
 
-# Variables for the frame, pong ball, and paddles
-frameWidth   = 640
-frameHeight  = 480
+def draw(canvas):
+    pass
+
+def keyDown(key):
+    pass
+
+def keyUp(key):
+    pass
+
+# Global variables
+frameWidth  = 640
+frameHeight = 480
 
 # Create the frame
 frame = simplegui.create_frame('Pong!', frameWidth, frameHeight)
 
 # Boilerplate
-frame.set_draw_handler()
-frame.set_keydown_handler()
-frame.set_keyup_handler()
+frame.set_draw_handler(draw)
+frame.set_keydown_handler(keyDown)
+frame.set_keyup_handler(keyUp)
 
 # Set up the restart button
 frame.add_button('Restart', newGame, 200)

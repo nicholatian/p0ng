@@ -16,13 +16,13 @@
 ##    8 8888             `8888888P'     8            `Yo     `8888888P'
 
 # Import our modules
-import simplegui
+import simpleguitk as simplegui
 import random
 
 # initialize globals - pos and vel encode vertical info for paddles
 width = 600
 half_width = width / 2
-height = 400   
+height = 400
 half_height = height / 2
 ball_radius = 20
 pad_width = 8
